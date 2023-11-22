@@ -5,12 +5,17 @@
 
 @layer components {
 
-  .container {
-    @apply relative w-full h-screen overflow-hidden
+
+  .canvas-container { 
+    @apply absolute top-0 left-0 w-screen h-screen overflow-hidden;
   }
 
-  .orb {
-    @apply absolute bg-black rounded-full w-6 h-6
+  .full-screen-canvas {
+    @apply w-full h-full; 
+  }
+
+  .overlay-content { 
+    @apply absolute top-20 left-20 z-10; 
   }
 
 }
