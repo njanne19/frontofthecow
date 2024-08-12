@@ -1,0 +1,21 @@
+/* MetaBalls.module.css */
+.innerMetaBallsContainer { 
+    filter: blur(20px); 
+    position: fixed; 
+    top: 0; 
+    left: 0; 
+    width: 100%; 
+    height: 100%;   
+    z-index: 1;
+    background-color: white; 
+}
+
+.outerMetaBallsContainer {
+    filter: contrast(1200%) brightness(400%); 
+    position: fixed; 
+    top: 0; 
+    left: 0; 
+    width: 100%; 
+    height: 100%;     
+    z-index: 2;
+} 
