@@ -1,6 +1,9 @@
 /* MetaBalls.module.css */
 .innerMetaBallsContainer { 
-    filter: blur(20px); 
+    filter: blur(20px) drop-shadow( 1px  0px 0px black) 
+    drop-shadow(-1px  0px 0px black)
+    drop-shadow( 0px  1px 0px black) 
+    drop-shadow( 0px -1px 0px black);
     position: fixed; 
     top: 0; 
     left: 0; 
@@ -10,8 +13,12 @@
     background-color: white; 
 }
 
+
 .outerMetaBallsContainer {
-    filter: contrast(1200%) brightness(400%); 
+    filter: contrast(2000%) brightness(400%)  drop-shadow( 1px  0px 0px black) 
+    drop-shadow(-1px  0px 0px black)
+    drop-shadow( 0px  1px 0px black) 
+    drop-shadow( 0px -1px 0px black); 
     position: fixed; 
     top: 0; 
     left: 0; 
@@ -19,3 +26,12 @@
     height: 100%;     
     z-index: 2;
 } 
+
+.ballImg {
+    pointer-events: none; 
+    -webkit-user-drag: none;
+    user-select: none;
+    -moz-user-select: none;
+    -webkit-user-select: none;
+    -ms-user-select: none;
+}
